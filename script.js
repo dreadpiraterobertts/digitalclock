@@ -10,6 +10,10 @@ function updateTime() {
     const tokyoTime = new Date(now.toLocaleString('ja-JP', {timeZone:'Asia/Tokyo'}))
     document.querySelector('#tokyo .time').textContent = tokyoTime.toLocaleTimeString();
 
+    const torontoTime = new Date(now.toLocaleString('en-US', {timeZone: 'America/Toronto'}));
+    document.querySelector('#toronto .time').textContent = torontoTime.toLocaleTimeString();
+
+
 
 }
 
